@@ -9,6 +9,8 @@
   
     .hero {
       max-width: 200px;
+      
+      border-radius: 100%;
     }
   
     span {
@@ -78,6 +80,7 @@
     gap: 15px;
   }
   
+
   @media (width >= 800px) {
     .container {
       flex-direction: row-reverse;

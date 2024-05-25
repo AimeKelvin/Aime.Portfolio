@@ -20,7 +20,7 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
     return (
     <section id="hero" className={styles.container}>
         <div className={styles.colorModeContainer}>
-            <img src={heroImg} className={styles.hero}
+            <img id="image-me" src={heroImg} className={styles.hero}
             alt="Profile picture of Aime Kelvin" /> 
             <img className={styles.colorMode} src={themeIcon} 
             alt="color mode icon" onClick={toggleTheme} />
