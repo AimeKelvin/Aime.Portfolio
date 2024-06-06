@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-img.png';
+import heroImg from '../../assets/avatar.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
@@ -8,7 +8,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/cv.pdf';
+import CV from '../../assets/Kelvin_resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -22,6 +22,7 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
         <div className={styles.colorModeContainer}>
             <img id="image-me" src={heroImg} className={styles.hero}
             alt="Profile picture of Aime Kelvin" /> 
+    
             <img className={styles.colorMode} src={themeIcon} 
             alt="color mode icon" onClick={toggleTheme} />
         </div>
@@ -44,10 +45,10 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
 </a>
 </span>
           <p className={styles.description}>
-            With a passion for developing modern React web apps 
-            seamingless user experience and commercial businesses.
-            </p>
-            <a href={CV} download>
+          Dedicated and  ambitious high school student 👨🏽‍🦱&zwj;💻 pursuing a career in Software Development with a strong foundation in frontend development. A talented self-taught developer proficient in handling daily assignments and eager to tackle any challenge. Quick to identify and bridge knowledge gaps, consistently adding value to both employer and team.
+           </p>
+           <p>Based in Rwanda <sub>RW</sub></p>
+            <a href={CV} >
                 <button className='hover' download>Resume</button>
             </a>
     </div>

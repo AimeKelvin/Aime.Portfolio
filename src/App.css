@@ -9,7 +9,7 @@
  }
  
  [data-theme='dark'] {
-   --background-color: #222;
+   --background-color:  #111;
    --btn-color: #fff;
    --btn-text-color: #222;
    --project-card-bg: #fff;
@@ -45,19 +45,19 @@
  p {
    font-family: 'Roboto Mono', monospace;
  }
- 
+ /*
  h1,
  h2 {
    text-transform: uppercase;
  }
- 
+ */
  h2,
  h3 {
    font-size: 20px;
  }
  
  h1 {
-   font-family: 'Rubik', sans-serif;
+   font-family: 'Reddit Mono', sans-serif;
    font-size: 32px;
  }
  

@@ -1,11 +1,12 @@
 import React from 'react'
+import styles from '../sections/Hero/HeroStyles.module.css'
 
 const ProjectCard = ({src, link, h3, p}) => {
   return (
 <a href={link}>
           <img src={src} className="hover" />
           <h3>{h3}</h3>
-          <p>{p}</p>
+          <p className={styles.description}>{p}</p>
         </a>
   )
 }
