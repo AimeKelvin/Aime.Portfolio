@@ -12,14 +12,17 @@ const Projects = () => {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
 
-        <ProjectCard src={handServing} link="#" h3="Arserve" 
+        <ProjectCard src={handServing} link="https://github.com/AimeKelvin/Arserve" h3="Arserve" 
         p=" Business Website for multi-service company"/>
 
-<ProjectCard src={finance} link="#" h3="My Wallet" 
+<ProjectCard src={finance} link="#" h3="Ikofi" 
  p="Personal finance management platform"/>
 
-<ProjectCard src={realtors} link="#" h3="Estate community"
- p="Real estate based social app"/>
+<ProjectCard src={realtors} link="#" h3="Urban Hub"
+ p="Real estate based social app for real estate buyers and sellers"/>
+
+<ProjectCard src={realtors} link="#" h3="Urban Hub"
+ p="Real estate based social app for real estate buyers and sellers"/>
 
 
 

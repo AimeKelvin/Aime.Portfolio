@@ -8,7 +8,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/Kelvin_resume.pdf';
+import CV from '../../assets/My Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -27,8 +27,7 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
             alt="color mode icon" onClick={toggleTheme} />
         </div>
         <div className={styles.info}>
-            <h1>Aime <br />
-            Kelvin
+            <h1>Shimwa<br />Aime <br />Kelvin 
             </h1>
             <h2>Frontend Developer</h2>
             <span>
@@ -45,10 +44,10 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
 </a>
 </span>
           <p className={styles.description}>
-          Dedicated and  ambitious high school student 👨🏽‍🦱&zwj;💻 pursuing a career in Software Development with a strong foundation in frontend development. A talented self-taught developer proficient in handling daily assignments and eager to tackle any challenge. Quick to identify and bridge knowledge gaps, consistently adding value to both employer and team.
+          Dedicated and  ambitious high school student pursuing a career in Software Development.
            </p>
            <p>Based in Rwanda <sub>RW</sub></p>
-            <a href={CV} >
+            <a href={CV} target='blank'>
                 <button className='hover' download>Resume</button>
             </a>
     </div>
