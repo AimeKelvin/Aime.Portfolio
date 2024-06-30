@@ -3,6 +3,7 @@ import styles from './ProjectsStyles.module.css';
 import handServing from '../../assets/arserve.png';
 import finance from '../../assets/finance.png'
 import realtors from '../../assets/rwandan_realtor.png';
+import VidShare from '../../assets/viberr.png';
 import ProjectCard  from '../../common/ProjectCard';
 
 
@@ -21,8 +22,8 @@ const Projects = () => {
 <ProjectCard src={realtors} link="#" h3="Urban Hub"
  p="Real estate based social app for real estate buyers and sellers"/>
 
-<ProjectCard src={realtors} link="#" h3="Urban Hub"
- p="Real estate based social app for real estate buyers and sellers"/>
+<ProjectCard src={VidShare} link="#" h3="BookIt"
+ p="An airbnb clone for hotel booking"/>
 
 
 
