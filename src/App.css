@@ -23,6 +23,8 @@
    display: flex;
    justify-content: center;
    margin: 0 auto 60px;
+   max-width: 100%;
+   overflow-x: hidden;
  }
  
  #root {
