@@ -2,9 +2,13 @@ import React from 'react'
 import styles from './AboutStyles.module.css'
 
 const About = () => {
-function more(){
-  info.style.display ='';
+  let more = document.getElementById("more");
+function readMore(){
+  more.style.display = "block";
 }
+
+let readMoreButton = document.getElementById("readMoreButton");
+readMoreButton.onclick = readMore();
 
   return (
     <div className={styles.container}>
@@ -17,7 +21,7 @@ function more(){
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-     <div className={styles.more}>
+     <div id="more" className={styles.more}>
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
@@ -36,7 +40,7 @@ function more(){
      </p>
      </div>
     <div className={styles.buttonSpace}>
-    <button onClick={more}>Read more</button>
+    <button id="readMoreButton">Read more</button>
     </div>
     </div>
     
