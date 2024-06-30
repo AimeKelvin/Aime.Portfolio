@@ -22,7 +22,7 @@ const Projects = () => {
 <ProjectCard src={realtors} link="#" h3="Urban Hub"
  p="Real estate based social app for real estate buyers and sellers"/>
 
-<ProjectCard src={library} link="#" h3=""
+<ProjectCard src={library} link="#" h3="BookFlow"
  p="A library management system"/>
 
 
