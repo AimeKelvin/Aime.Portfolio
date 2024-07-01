@@ -3,6 +3,13 @@ import styles from './AboutStyles.module.css'
 
 
 const About = () => {
+
+  const moreButton = document.getElementById('MoreButton');
+
+  moreButton.addEventListener('click',()=>{
+    moreButton.style.backgroundColor = "red";
+  })
+
   return (
     <div className={styles.container}>
         <h1>About me 👨🏽</h1>
@@ -39,7 +46,7 @@ const About = () => {
      </p>
      </div>
     <div className={styles.buttonSpace}>
-    <button id="readMoreButton">Read more</button>
+    <button id="MoreButton">Read more</button>
     </div>
     </div>
     
