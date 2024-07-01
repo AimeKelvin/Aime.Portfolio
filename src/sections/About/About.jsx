@@ -28,7 +28,9 @@ readMoreButton.addEventListener('click', () => {
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-     <div id="more" className={styles.more}>
+     <div id="more" style="
+     display:none;
+     ">
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
