@@ -1,14 +1,11 @@
 import React from 'react'
 import styles from './AboutStyles.module.css'
 
-const About = () => {
 let more = document.getElementById("more");
 let readMoreButton = document.getElementById("readMoreButton");
 
 readMoreButton.addEventListener('click', () => {
-  if(
-    more.style.display === "none"
-  ){
+  if(more.style.display === "none"){
     more.style.display === "block";
     readMoreButton.textContent = "Read less";
   }else{
@@ -17,9 +14,10 @@ readMoreButton.addEventListener('click', () => {
   }
 });
 
+const About = () => {
   return (
     <div className={styles.container}>
-        <h1>About me 👨🏽‍🦱</h1>
+        <h1>About me 👨🏽</h1>
     <p className={styles.info}>
     Dedicated and  ambitious high school student pursuing a career
      in Software Development with a strong foundation in frontend 
@@ -45,7 +43,13 @@ readMoreButton.addEventListener('click', () => {
        seamless integration of design and development efforts.
     </p>
     <p className={styles.info}>
-    I am passionate about a diverse range of hobbies that enrich both my personal and professional life. I enjoy gaming, which hones my strategic thinking and problem-solving skills. Playing basketball allows me to stay active and work effectively in a team environment, enhancing my collaboration and communication abilities. I value socializing with friends, which not only strengthens my interpersonal skills but also fosters a supportive network. Additionally, my interest in cyber security and programming drives my curiosity and dedication to staying updated with the latest technological advancements, continuously improving my technical expertise and analytical capabilities.
+    I am passionate about a diverse range of hobbies that enrich both my personal and professional 
+    life. I enjoy gaming, which hones my strategic thinking and problem-solving skills. Playing basketball
+     allows me to stay active and work effectively in a team environment, enhancing my collaboration and 
+     communication abilities. I value socializing with friends, which not only strengthens my interpersonal
+      skills but also fosters a supportive network. Additionally, my interest in cyber security and programming
+       drives my curiosity and dedication to staying updated with the latest technological advancements, 
+       continuously improving my technical expertise and analytical capabilities.
      </p>
      </div>
     <div className={styles.buttonSpace}>
