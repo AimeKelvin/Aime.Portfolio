@@ -3,8 +3,15 @@ import styles from './AboutStyles.module.css'
 
 
 const About = () => {
+
 const more = document.getElementById('more');
 const moreButton = document.getElementById('MoreButton');
+
+
+ const moreClicked = () => {
+  more.style.display = "block";
+moreButton.textContent = "Read Less";
+ }
 
 
   return (
@@ -18,7 +25,7 @@ const moreButton = document.getElementById('MoreButton');
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-   <div className={styles.more} id="more">
+   <div id="more">
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
@@ -43,7 +50,7 @@ const moreButton = document.getElementById('MoreButton');
      </p>
      </div>
     <div className={styles.buttonSpace}>
-    <button id="MoreButton">Read more</button>
+    <button onClick={moreClicked}>Read more</button>
     </div>
     </div>
     
