@@ -1,18 +1,6 @@
 import React from 'react'
 import styles from './AboutStyles.module.css'
 
-let more = document.getElementById("more");
-let readMoreButton = document.getElementById("readMoreButton");
-
-readMoreButton.addEventListener('click', () => {
-  if(more.style.display === "none"){
-    more.style.display === "block";
-    readMoreButton.textContent = "Read less";
-  }else{
-    more.style.display = 'none';
-    readMoreButton.textContent = 'Read more';
-  }
-});
 
 const About = () => {
   return (
@@ -26,9 +14,7 @@ const About = () => {
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-     <div id="more" style="
-     display:none;
-     ">
+   
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
@@ -51,7 +37,7 @@ const About = () => {
        drives my curiosity and dedication to staying updated with the latest technological advancements, 
        continuously improving my technical expertise and analytical capabilities.
      </p>
-     </div>
+  
     <div className={styles.buttonSpace}>
     <button id="readMoreButton">Read more</button>
     </div>
