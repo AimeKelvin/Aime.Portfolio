@@ -2,13 +2,20 @@ import React from 'react'
 import styles from './AboutStyles.module.css'
 
 const About = () => {
-  let more = document.getElementById("more");
-function readMore(){
-  more.style.display = "block";
-}
-
+let more = document.getElementById("more");
 let readMoreButton = document.getElementById("readMoreButton");
-readMoreButton.onclick = readMore();
+
+readMoreButton.addEventListener('click', () => {
+  if(
+    more.style.display === "none"
+  ){
+    more.style.display === "block";
+    readMoreButton.textContent = "Read less";
+  }else{
+    more.style.display = 'none';
+    readMoreButton.textContent = 'Read more';
+  }
+});
 
   return (
     <div className={styles.container}>
