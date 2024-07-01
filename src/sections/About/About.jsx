@@ -3,14 +3,10 @@ import styles from './AboutStyles.module.css'
 
 
 const About = () => {
-
 const more = document.getElementById('more');
-const moreButton = document.getElementById('MoreButton');
-
 
  const moreClicked = () => {
   more.style.display = "block";
-moreButton.textContent = "Read Less";
  }
 
 
@@ -49,9 +45,11 @@ moreButton.textContent = "Read Less";
        continuously improving my technical expertise and analytical capabilities.
      </p>
      </div>
+    {/*
     <div className={styles.buttonSpace}>
     <button onClick={moreClicked}>Read more</button>
     </div>
+    */}
     </div>
     
   )
