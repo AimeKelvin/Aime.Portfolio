@@ -3,11 +3,15 @@ import styles from './AboutStyles.module.css'
 
 
 const About = () => {
+const more = document.getElementById('more');
+const moreButton = document.getElementById('MoreButton');
 
-  const moreButton = document.getElementById('MoreButton');
-
-  moreButton.addEventListener('click',()=>{
-    moreButton.style.backgroundColor = "red";
+  moreButton.addEventListener('click',function(){
+    if(more.style.display === 'none'){
+      more.style.display = 'block'; //show more lines of about
+    }else{
+      more.style.display = 'none';
+    }
   })
 
   return (
@@ -21,7 +25,7 @@ const About = () => {
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-   <div className={styles.more}>
+   <div className={styles.more} id="more">
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
