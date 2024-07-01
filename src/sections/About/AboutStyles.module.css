@@ -48,3 +48,7 @@ button:active {
   padding:50px;
   text-align: center;
 }
+
+.more{
+  display: none;
+}

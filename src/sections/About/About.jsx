@@ -14,7 +14,7 @@ const About = () => {
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-   
+   <div className={styles.more}>
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
@@ -37,7 +37,7 @@ const About = () => {
        drives my curiosity and dedication to staying updated with the latest technological advancements, 
        continuously improving my technical expertise and analytical capabilities.
      </p>
-  
+     </div>
     <div className={styles.buttonSpace}>
     <button id="readMoreButton">Read more</button>
     </div>
