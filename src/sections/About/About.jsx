@@ -6,13 +6,6 @@ const About = () => {
 const more = document.getElementById('more');
 const moreButton = document.getElementById('MoreButton');
 
-  moreButton.addEventListener('click',function(){
-    if(more.style.display === 'none'){
-      more.style.display = 'block'; //show more lines of about
-    }else{
-      more.style.display = 'none';
-    }
-  })
 
   return (
     <div className={styles.container}>
