@@ -1,27 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './AboutStyles.module.css'
 
 
+
 const About = () => {
-const more = document.getElementById('more');
 
- const moreClicked = () => {
-  more.style.display = "block";
- }
-
+ const[isDivVisible, setIsDivVisible] = useState(false);
+ const [buttonText, setButtonText] = useState("Read More");
+ const handleClick = () => {
+  setIsDivVisible(prevState => !prevState);
+  setButtonText(prevState =>(prevState === "Read More" ? "Read Less" : "Read More"))
+ };
 
   return (
     <div className={styles.container}>
         <h1>About me 👨🏽</h1>
     <p className={styles.info}>
-    Dedicated and  ambitious high school student pursuing a career
+                                                               
+    Dedicated and  ambitious high school student with | 2 years of experience |
      in Software Development with a strong foundation in frontend 
      development. A talented self-taught developer proficient in
      handling daily assignments and eager to tackle any challenge.
      Quick to identify and bridge knowledge gaps, consistently
      adding value to both employer and team.
      </p>
-   <div id="more">
+{isDivVisible && (
+   <div>
 <p className={styles.info}>
      I have successfully completed a variety of graphic design projects 
      for clients, encompassing logos, websites, and marketing materials, 
@@ -37,7 +41,7 @@ const more = document.getElementById('more');
     </p>
     <p className={styles.info}>
     I am passionate about a diverse range of hobbies that enrich both my personal and professional 
-    life. I enjoy gaming, which hones my strategic thinking and problem-solving skills. Playing basketball
+    life. I enjoy gaming 🎮 , which hones my strategic thinking and problem-solving skills. Playing basketball 🏀 
      allows me to stay active and work effectively in a team environment, enhancing my collaboration and 
      communication abilities. I value socializing with friends, which not only strengthens my interpersonal
       skills but also fosters a supportive network. Additionally, my interest in cyber security and programming
@@ -45,12 +49,15 @@ const more = document.getElementById('more');
        continuously improving my technical expertise and analytical capabilities.
      </p>
      </div>
-    {/*
+)}
+   
     <div className={styles.buttonSpace}>
-    <button onClick={moreClicked}>Read more</button>
+    <button onClick={handleClick}>{buttonText}</button>
     </div>
-    */}
+    
     </div>
+
+    
     
   )
 }

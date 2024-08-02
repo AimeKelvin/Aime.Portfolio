@@ -12,6 +12,10 @@ h1{
   text-align: center;
 padding:0 0 50px 0;
 }
+
+.xp{
+  color: red;
+}
 .container{
   padding:1rem 2rem 1rem 2rem;
 
@@ -47,4 +51,12 @@ button:active {
   width: 100%;
   padding:50px;
   text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
 }

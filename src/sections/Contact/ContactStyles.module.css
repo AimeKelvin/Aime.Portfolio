@@ -9,6 +9,11 @@
     flex-direction: column;
     gap: 30px;
   }
+
+.result{
+  margin-top: 50px;
+  font-weight: 500;
+}
   
   textarea,
   input:not([type='submit']) {

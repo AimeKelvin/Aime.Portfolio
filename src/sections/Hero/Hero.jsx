@@ -10,6 +10,7 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/My Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
+import { TypeAnimation } from 'react-type-animation';
 
 function Hero() {
 const { theme, toggleTheme} = useTheme();
@@ -29,17 +30,36 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
         <div className={styles.info}>
             <h1>Shimwa<br />Aime <br />Kelvin 
             </h1>
-            <h2>Frontend Developer</h2>
+           
+            <div  className={styles.typeAnimation} > 
+            <TypeAnimation
+
+sequence={[
+  // Same substring at the start will only be typed out once, initially
+  'Frontend Developer 💻',
+  1000, // wait 1s before replacing "Mice" with "Hamsters"
+  'UI/UX Designer ✏️',
+  1000,
+  'React Junior Developer ⚛️',
+  1000,
+]}
+wrapper="span"
+speed={60}
+
+repeat={Infinity}
+cursor={false}
+/>
+            </div>
             <span>
-<a href="https://twitter.com/" target="_blank">
+<a href="https://x.com/ShimwaKelvin" target="_blank">
     <img src={twitterIcon} alt="" />
 </a>
 
-<a href="https://linkedin.com/" target="_blank">
+<a href="https://linkedin.com/in/shimwa-kelvin-4b0630297" target="_blank">
     <img src={linkedinIcon} alt="" />
 </a>
 
-<a href="https://github.com/" target="_blank">
+<a href="https://github.com/AimeKelvin" target="_blank">
     <img src={githubIcon} alt="" />
 </a>
 </span>
