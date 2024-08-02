@@ -36,11 +36,11 @@ const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
 
 sequence={[
   // Same substring at the start will only be typed out once, initially
-  'Frontend Developer 💻',
+  'Frontend Developer',
   1000, // wait 1s before replacing "Mice" with "Hamsters"
-  'UI/UX Designer ✏️',
+  'UI/UX Designer',
   1000,
-  'React Junior Developer ⚛️',
+  'React Developer',
   1000,
 ]}
 wrapper="span"
