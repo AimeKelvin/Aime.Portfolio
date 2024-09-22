@@ -9,6 +9,7 @@ import About from './sections/About/About.jsx';
 function App() {
   return (
   <>
+
 <Hero />
 <About />
 <Projects />
